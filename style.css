@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #f1eaea;
+  margin: 0;
+  padding: 0;
+}
+
+.roxo {
+  color: #8000ff;
+}
+
+/* Container geral */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto;
+  background: #111;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(128, 0, 255, 0.2);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #8000ff;
+  margin-bottom: 30px;
+}
+
+/* Navegação */
+.nav-btns {
+  text-align: center;
+  margin: 20px 0;
+}
+.nav-btns button {
+  background: #111;
+  border: 1px solid #8000ff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  color: #8000ff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nav-btns button:hover {
+  background: #8000ff;
+  color: #fff;
+}
+
+/* Seções */
+.secao {
+  display: none;
+}
+.secao.active {
+  display: block;
+}
+
+/* Sobre */
+.content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.decor {
+  width: 10px;
+  height: 250px;
+  background-color: #8000ff;
+  border-radius: 10px;
+}
+.content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.text {
+  flex: 1;
+}
+.text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Social icons */
+.social-icons {
+  text-align: center;
+  margin-top: 30px;
+}
+.social-link {
+  color: #fff;
+  font-size: 40px;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+}
+.social-link:hover {
+  transform: scale(1.2);
+}
+.fa-youtube:hover { color: #ff0000; }
+.fa-instagram:hover { color: #e1306c; }
+.fa-discord:hover { color: #5865F2; }
+.fa-steam:hover { color: #0a6d92; }
+.fa-twitch:hover { color: #9146ff; }
+
+/* Contato */
+.contact {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  color: #eee;
+  text-align: center;
+}
+.contact h2 {
+  color: #8000ff;
+  margin-bottom: 20px;
+}
+.contact i {
+  margin-right: 8px;
+  color: #8000ff;
+}
+.contact a {
+  color: #8000ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* GIF container */
+.gif-container {
+  margin-top: 20px;
+  text-align: center;
+}
+.gif-container img {
+  width: 60px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+  .decor {
+    display: none;
+  }
+  .content img {
+    width: 100%;
+    height: auto;
+  }
+}

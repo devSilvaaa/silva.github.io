@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Portfólio</title>
+</head>
+<body>
+
+  <!-- Navegação -->
+  <div class="nav-btns">
+    <button onclick="mostrarSecao('sobre')">Sobre</button>
+    <button onclick="mostrarSecao('projetos')">Projetos</button>
+    <button onclick="mostrarSecao('contato')">Contato</button>
+  </div>
+
+  <!-- Sobre -->
+  <div id="sobre" class="secao active">
+    <div class="container">
+      <h1>Sobre Mim</h1>
+      <div class="content">
+        <div class="decor"></div>
+        <img src="pics/silva.jpg" alt="Vitor Henrique">
+        <div class="text">
+          <p>Sou <span class="roxo">Vitor Henrique</span>, estudante de Análise e Desenvolvimento de Sistemas (ADS).</p>
+          <p>Amo passar a maior parte do meu tempo jogando, treinando e aproveitando momentos com a Mulher Da Minha Vida. Recentemente, uma grande prioridade tem sido meu interesse em estudar e me aprofundar na área em que atuarei futuramente, não apenas em programação, mas em tudo que envolve tecnologia e computadores.</p>
+        </div>
+      </div>
+
+      <!-- Redes sociais -->
+      <div class="social-icons">
+        <a href="https://www.youtube.com/@siLva7ss" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/howsilvaa" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="https://discord.gg/YSpVp4C7Ax" target="_blank" class="social-link"><i class="fab fa-discord"></i></a>
+        <a href="https://steamcommunity.com/id/siLvah4x" target="_blank" class="social-link"><i class="fab fa-steam"></i></a>
+        <a href="https://www.twitch.tv/silva7ss" target="_blank" class="social-link"><i class="fab fa-twitch"></i></a>
+      </div>
+
+      <!-- GIF -->
+      <div class="gif-container">
+        <img src="icons/GIG.gif" alt="Gif animado">
+      </div>
+    </div>
+  </div>
+
+  <!-- Projetos -->
+  <div id="projetos" class="secao">
+    <div class="container">
+      <h1>Meus Projetos</h1>
+      <ul>
+        <li>Projeto 1: Sistema de Rastreamento de Pedidos com Alexa</li>
+        <li>Projeto 2: Cardápio Online</li>
+        <li>Projeto 3: Site Portfólio HTML/CSS</li>
+      </ul>
+
+      <!-- GIF -->
+      <div class="gif-container">
+        <img src="icons/GIG.gif" alt="Gif animado">
+      </div>
+    </div>
+  </div>
+
+  <!-- Contato -->
+  <div id="contato" class="secao">
+    <div class="container contact">
+      <h2>Contato</h2>
+      <p><i class="fa-solid fa-envelope"></i> silvabusiness006@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> (83) 9150-3298</p>
+      <p><i class="fa-brands fa-discord"></i> penumbraaa.</p>
+
+      <!-- GIF -->
+      <div class="gif-container">
+        <img src="icons/GIG.gif" alt="Gif animado">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
